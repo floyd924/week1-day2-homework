@@ -27,62 +27,75 @@ def join_string(a, b)
   return a + b
 end
 
+# def number_to_full_month_name(n)
+# if n == 1
+#   return "January"
+# elsif n == 2
+#   return "February"
+# elsif n == 3
+#   return "March"
+# elsif n == 4
+#   return "April"
+# elsif n == 5
+#   return "May"
+# elsif n == 6
+#   return "June"
+# elsif n == 7
+#   return "July"
+# elsif n == 8
+#   return "August"
+# elsif n == 9
+#   return "September"
+# elsif n == 10
+#   return "October"
+# elsif n == 11
+#   return "November"
+# elsif n == 12
+#   return "December"
+# end
+# end
 def number_to_full_month_name(n)
-if n == 1
-  return "January"
-elsif n == 2
-  return "February"
-elsif n == 3
-  return "March"
-elsif n == 4
-  return "April"
-elsif n == 5
-  return "May"
-elsif n == 6
-  return "June"
-elsif n == 7
-  return "July"
-elsif n == 8
-  return "August"
-elsif n == 9
-  return "September"
-elsif n == 10
-  return "October"
-elsif n == 11
-  return "November"
-elsif n == 12
-  return "December"
-end
+  n = n - 1
+   month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+return month[n]
 end
 
+
+# def number_to_short_month_name(n)
+# if n == 1
+#   return "Jan"
+# elsif n == 2
+#   return "Feb"
+# elsif n == 3
+#   return "Mar"
+# elsif n == 4
+#   return "Apr"
+# elsif n == 5
+#   return "May"
+# elsif n == 6
+#   return "Jun"
+# elsif n == 7
+#   return "Jul"
+# elsif n == 8
+#   return "Aug"
+# elsif n == 9
+#   return "Sep"
+# elsif n == 10
+#   return "Oct"
+# elsif n == 11
+#   return "Nov"
+# elsif n == 12
+#   return "Dec"
+# end
+# end
 
 def number_to_short_month_name(n)
-if n == 1
-  return "Jan"
-elsif n == 2
-  return "Feb"
-elsif n == 3
-  return "Mar"
-elsif n == 4
-  return "Apr"
-elsif n == 5
-  return "May"
-elsif n == 6
-  return "Jun"
-elsif n == 7
-  return "Jul"
-elsif n == 8
-  return "Aug"
-elsif n == 9
-  return "Sep"
-elsif n == 10
-  return "Oct"
-elsif n == 11
-  return "Nov"
-elsif n == 12
-  return "Dec"
+  n = n - 1
+   month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+return month[n]
 end
-end
+
+
 
 def volume_of_cube(a)
   volume = a**3
