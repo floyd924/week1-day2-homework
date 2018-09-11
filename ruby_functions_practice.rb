@@ -89,10 +89,10 @@ end
 # end
 # end
 
-def number_to_short_month_name(n)
-  n = n - 1
-   month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-return month[n]
+def number_to_short_month_name(l)
+month_long = number_to_full_month_name(l)
+   month_short = month_long.slice(0..2)
+return month_short
 end
 
 
